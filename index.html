@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Punnya PS | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div id="mobile-nav" class="w-48 sm:hidden hidden absolute rounded-b-2xl h-96 z-10 right-0 bg-[#9e0529]">
+            <button id="close-nav" class="text-white text-2xl font-bold absolute right-4 top-4 hover:text-[#6d0019a3]" onclick="closeNav()">X</button>
+            <ul>
+                <li class="mt-16 w-full h-16 font-bold text-white flex justify-center items-center rounded-xl hover:bg-[#6d0019a3]" onclick="closeNav()">
+                    <a href="#home" >
+                        Home
+                    </a>
+                </li>
+
+                <li class="w-full h-16 font-bold text-white flex justify-center items-center rounded-xl hover:bg-[#6d0019a3]" onclick="closeNav()">
+                    <a href="#about" class="relative group">
+                        About
+                    </a>
+                </li>
+
+                <li class="w-full h-16 font-bold text-white flex justify-center items-center rounded-xl hover:bg-[#6d0019a3]" onclick="closeNav()">
+                    <a href="#skill  " class="relative group">
+                        <!-- group enables child hover interaction -->
+                        Skills
+                    </a>
+                </li>
+
+                <li class="w-full h-16 font-bold text-white flex justify-center items-center rounded-xl hover:bg-[#6d00192e]" onclick="closeNav()">
+                    <a href="#projects" class="relative group">
+                        Projects
+                    </a>
+                </li>
+
+                <li class="w-full h-16 font-bold text-white flex justify-center items-center rounded-xl hover:bg-[#6d0019a3]" onclick="closeNav()">
+                    <a href="#contact" class="relative group">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="w-full h-15 bg-black/70 border-gray-800 text-white fixed grid grid-cols-[40%_70%] items-center">
+
+            <div class="flex justify-center ">
+                <p class="text-white text-xl font-semibold tracking-widest m-5 ">
+                    PUNNYA PS
+                </p>
+                <!-- tracking-widest → gives the spacing look -->
+            </div>
+
+            <ul class="flex  justify-center gap-4 xl:gap-16 text-sm font-medium tracking-wide max-sm:hidden">
+
+                <li>
+                    <a href="#home" class="relative group">
+                        Home
+                        <span
+                            class=" absolute left-0 -bottom-1 w-0 h-1 bg-[#6D001A] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="relative group">
+                        About
+                        <span
+                            class=" absolute left-0 -bottom-1 w-0 h-1 bg-[#6D001A] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skill  " class="relative group">
+                        <!-- group enables child hover interaction -->
+                        Skills
+                        <span
+                            class=" absolute left-0 -bottom-1 w-0 h-1 bg-[#6D001A] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="relative group">
+                        Projects
+                        <span
+                            class=" absolute left-0 -bottom-1 w-0 h-1 bg-[#6D001A] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="relative group">
+                        Contact
+                        <span
+                            class=" absolute left-0 -bottom-1 w-0 h-1 bg-[#6D001A] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+
+            </ul>
+            <div id="bar" class="grid gap-1 sm:hidden absolute right-10 cursor-pointer group">
+                <div class="w-6 rounded-sm h-1 bg-white transition-all duration-300 group-hover:bg-[#6D001A] "></div>
+                <div class="w-6 rounded-sm h-1 bg-white transition-all duration-300 group-hover:bg-[#6D001A] "></div>
+                <div class="w-6 rounded-sm h-1 bg-white transition-all duration-300 group-hover:bg-[#6D001A] "></div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN INTRO SECTION -->
+
+    <section id="home" class="py-20 bg-black text-white min-h-screen flex items-center">
+
+        <div class="grid md:grid-cols-[50%_50%] gap-10 justify-center items-center w-full">
+            <!-- Image left + text right -->
+
+
+            <!-- left image -->
+            <div class="grid justify-between max-md:justify-center ">
+                <img src="/images/punnya.png" alt="profile"
+                    class="lg:w-175 md:w-120 sm:w-80 max-sm:w-50 lg:h-160 object-cover rounded-lg">
+
+
+            </div>
+
+
+
+
+            <div class="px-10 space-y-6 max-w-lg">
+                <!-- space-y-6 adds vertical spacing between all child elements-->
+
+                <h1 class="text-3xl font-bold">
+                    Hello!
+                </h1>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight  ">
+                    <!-- Space between lines of text -->
+                    <span class="text-[#6D001A]">I'm Punnya PS</span>
+                </h2>
+
+                <p>
+                    Curious developer focused on
+                    creating practical web applications
+                    and continuously learning new technologies.
+                </p>
+
+                <button
+                    class="px-10 py-3  space-y-8 max-w-lg bg-[#6D001A] rounded-lg hover:bg-[#8a0022] transition hover:scale-105 duration-300 ">
+                    Contact
+                </button>
+
+                <button
+                    class=" px-10 py-3 ml-2 space-y-8 max-w-lg bg-[#6D001A] rounded-lg hover:bg-[#8a0022] transition  hover:scale-105 ">
+                    Download CV 
+                </button>
+
+            </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="bg-black text-white py-16 px-6 sm:px-10  ">
+
+        <div class="max-w-4xl mx-auto text-center space-y-10">
+
+            <h2 class="text-3xl sm:text-4xl font-bold">
+                About <span class="text-[#6D001A]">Me</span> </h2>
+
+            <p>
+
+                I’m a BCA graduate and a software developer intern focused on building solutions that are simple, clear,
+                and effective.
+
+                I approach problems with logic and patience, breaking them down until they make sense instead of relying
+                on shortcuts. I believe good work comes from consistency, attention to detail, and a willingness to
+                improve every day.
+
+                At the start of my career, I’m focused on learning deeply, gaining real-world experience, and growing
+                into a developer who can deliver reliable and meaningful results.
+
+            </p>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skill" class="bg-black text-white  ">
+
+
+
+
+        <h2 class="text-center text-3xl sm:text-4xl font-bold text-white  p-10">
+            Skills
+        </h2>
+
+        <div class="py-10 flex flex-wrap gap-6 justify-center">
+
+            <div class="w-60 bg-linear-to-bl from-[#8e0122] to-[#240008] rounded-xl overflow-hidden 
+            transition-all duration-300 hover:w-60 group cursor-pointer">
+
+                <!-- html heading -->
+                <div class="h-20 flex items-center justify-center">
+                    <p class="text-white font-medium">HTML</p>
+                </div>
+
+                <!-- discription drawer -->
+                <div class="max-h-0 overflow-hidden 
+                group-hover:max-h-60 
+                transition-all duration-800">
+
+                    <p class="text-xs text-gray-200 px-4 pb-4 text-center">
+                        HTML is the standard markup language used to create the structure of web pages. It defines the
+                        layout and organization of content using elements such as headings, paragraphs, images, links,
+                        and forms. HTML acts as the foundational layer of any website.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="w-60 bg-linear-to-bl from-[#8e0122] to-[#240008] rounded-xl overflow-hidden 
+            transition-all duration-300 hover:w-60 group cursor-pointer">
+
+                <!-- css heading -->
+                <div class="h-20 flex items-center justify-center">
+                    <p class="text-white font-medium">CSS</p>
+                </div>
+
+                <!--  discription-->
+                <div class="max-h-0 overflow-hidden 
+                group-hover:max-h-40 
+                transition-all duration-800">
+
+                    <p class="text-xs text-gray-200 px-4 pb-4 text-center">
+                        CSS is a stylesheet language used to control the visual presentation of web pages. It manages
+                        design aspects such as colors, fonts, spacing, layout, and responsiveness. CSS enables
+                        developers to create visually appealing and consistent user interfaces.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="w-60 bg-linear-to-bl from-[#8e0122] to-[#240008] rounded-xl overflow-hidden 
+            transition-all duration-300 hover:w-60 group cursor-pointer">
+
+                <!-- css heading -->
+                <div class="h-20 flex items-center justify-center">
+                    <p class="text-white font-medium">Java Script</p>
+                </div>
+
+                <!--  discription-->
+                <div class="max-h-0 overflow-hidden 
+                group-hover:max-h-40 
+                transition-all duration-800">
+
+                    <p class="text-xs text-gray-200 px-4 pb-4 text-center">
+                        JavaScript is a programming language used to add interactivity and dynamic behavior to web
+                        pages.
+                        It allows developers to create features such as animations, event handling, form validation, and
+                        real-time content updates,
+                        making websites more engaging and functional.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="w-60 bg-linear-to-bl from-[#8e0122] to-[#240008] rounded-xl overflow-hidden 
+            transition-all duration-300 hover:w-60 group cursor-pointer">
+
+                <!-- css heading -->
+                <div class="h-20 flex items-center justify-center">
+                    <p class="text-white font-medium">Tailwind CSS</p>
+                </div>
+
+                <!--  discription-->
+                <div class="max-h-0 overflow-hidden 
+                group-hover:max-h-40 
+                transition-all duration-800">
+
+                    <p class="text-xs text-gray-200 px-4 pb-4 text-center">
+                        Tailwind CSS is a utility-first CSS framework developed by Tailwind Labs.
+                        It provides a collection of pre-defined utility classes that enable rapid UI development
+                        directly within HTML.
+                        Tailwind promotes a highly customizable and efficient approach to styling without writing
+                        extensive custom CSS.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="bg-black text-white">
+
+        <h2 class="text-center text-3xl sm:text-4xl font-bold text-white  py-20">
+            Projects
+        </h2>
+
+        <div class="flex flex-wrap justify-around ">
+
+            <div class="project-card w-80 h-50 p- rounded-xl
+              bg-[url('/images/1000215826.jpg.jpeg')] bg-cover bg-center 
+             bg-black/60 bg-blend-overlay  ">
+                <h3 class="text-[#aa0b30]  font-bold">Navigation Bar </h3>
+
+                <p class="pt-5 text-sm text-gray-400">A front-end clone of the W3Schools website designed to practice responsive layouts and navigation
+                    structures. It replicates the learning platform’s UI with menus, search bar, and structured content
+                    sections.</p>
+                    <button onclick="openImage('/images/Screenshot (53).png')"
+                    class="m-2 bg-[#76031e92] text-sm p-1.5 rounded-lg text-gray-300">Read More</button>
+
+
+            </div>
+
+            <div class="project-card w-80 h-50 p-2 rounded-xl
+             bg-[url('/images/1000215826.jpg.jpeg')] bg-cover bg-center 
+             bg-black/60 bg-blend-overlay ">
+                <h3 class="text-[#aa0b30]  font-bold">Goibibo Web Clone</h3>
+
+                <p class="pt-5 text-sm text-gray-400">A travel booking UI clone inspired by Goibibo, featuring flight search functionality
+                    with inputs for destinations, dates, and traveler details. Built to enhance skills in layout design
+                    and real-world UI replication..</p>
+
+                     <button onclick="openImage('/images/Screenshot (52).png')"
+                      class="m-2 bg-[#76031e92] text-sm p-1.5 rounded-lg text-gray-300">Read More</button>
+
+
+
+
+            </div>
+
+            <div class="project-card w-80 h-50 p-2  rounded-xl
+             bg-[url('/images/1000215826.jpg.jpeg')] bg-cover bg-center 
+             bg-black/60 bg-blend-overlay ">
+                <h3 class="text-[#aa0b30]  font-bold">Chat Bot</h3>
+
+                <p class="pt-5 text-sm text-gray-400">A simple and interactive chatbot interface built using HTML, CSS, and JavaScript. It
+                    allows users to send messages and receive instant responses, focusing on clean UI design and smooth
+                    user interaction..</p>
+
+                     <button onclick="openImage('/images/Screenshot (51).png')"
+                     class="m-2 bg-[#76031e92] text-sm p-1.5 rounded-lg text-gray-300 " >Read More</button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT FORM -->
+
+<div class="flex flex-wrap justify-around bg-black p-15 ">
+<section class="bg-black text-white py-16 px-4 sm:px-6 ">
+
+    <h2 class="text-center text-3xl sm:text-4xl font-bold mb-10">
+        CONTACT
+    </h2>
+
+    <div class="flex flex-wrap gap-10">
+
+        <!-- LEFT FORM -->
+        <form id="contact-form" class="bg-linear-to-br from-[#8e0122] to-[#240008] p-6 w-96 sm:w-lg lg:w-3xl sm:p-16 rounded-xl space-y-6">
+
+            <div class="flex items-center flex-col sm:items-center sm:flex-row gap-2 sm:gap-4">
+                <label class="sm:w-24">Name</label>
+                <input type="text" name="name" placeholder="Enter your name"
+                    class="flex-1 bg-black/70 p-2 rounded outline-none w-full" required>
+            </div>
+
+            <div class="flex items-center flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                <label class="sm:w-24"> Email</label>
+                <input type="email" name="email" placeholder="Enter your mail" 
+                    class="flex-1 bg-black/70 p-2 rounded outline-none w-full"required>
+            </div>
+
+            <div class="flex items-center flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                <label class="sm:w-24">Message</label>
+                <textarea  name="message" placeholder="Your Message"
+                    class="flex-1 bg-black/70 p-2 rounded outline-none h-24 w-full"required></textarea>
+            </div>
+
+            <div class="text-center">
+                <button class="bg-[#8e0122] px-6 py-2 rounded shadow hover:scale-105 transition sm:w-auto" type="submit">
+                    Lets Get Started
+                </button>
+            </div>
+
+      <div id="contact" class="grid grid-cols-3 text-center sm:text-2xl mt-6 text-2xl">
+    <a class="hover:scale-120 transition cursor-pointer"  href="mailto:punnyamridul@email.com">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a class="hover:scale-120 transition cursor-pointer" href="https://github.com/punnyaps" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a  class="hover:scale-120 transition cursor-pointer" href="https://linkedin.com/in/punnyaps" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+     </div> 
+
+     </form>
+</div>
+
+    </div>
+
+</section>
+
+    </div>
+
+    <!-- IMAGE MODAL -->
+<div id="image-modal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+
+    <button id="close-modal" class="absolute top-5 right-8 text-white text-3xl">&times;</button>
+
+    <img id="modal-img" src="" class="max-w-[90%] max-h-[90%] rounded-lg">
+
+</div>
+
+
+
+
+
+<!-- Blur Background Alert -->
+<div id="customAlert" 
+     class="fixed inset-0 hidden items-center justify-center backdrop-md bg-black/30 z-10">
+
+  <div class="bg-black text-[#8e0122] rounded-2xl shadow-xl p-6 w-80 text-center border border-black">
+    
+    <!-- Message -->
+    <p id="alertMessage" class="text-lg font-semibold">
+      Message Sent Successfully!
+    </p>
+
+    <!-- Button -->
+    <button id="close-btn"
+      class="mt-5 px-5 py-2 bg-[#8e0122] hover:bg-[#430312] rounded-lg transition duration-300 text-white">
+      OK
+    </button>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+</body>
+</html>
