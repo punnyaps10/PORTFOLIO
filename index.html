@@ -28,7 +28,7 @@
 
     <header>
 
-        <div id="mobile-nav" class="w-48 sm:hidden hidden absolute rounded-b-2xl h-96 z-10 right-0 bg-[#9e0529]">
+        <div id="mobile-nav" class="w-48 sm:hidden hidden fixed rounded-b-2xl h-96 z-10 right-0 bg-[#9e0529]">
             <button id="close-nav" class="text-white text-2xl font-bold absolute right-4 top-4 hover:text-[#6d0019a3]" onclick="closeNav()">X</button>
             <ul>
                 <li class="mt-16 w-full h-16 font-bold text-white flex justify-center items-center rounded-xl hover:bg-[#6d0019a3]" onclick="closeNav()">
@@ -219,7 +219,7 @@
         <div class="py-10 flex flex-wrap gap-6 justify-center">
 
             <div class="w-60 bg-linear-to-bl from-[#8e0122] to-[#240008] rounded-xl overflow-hidden 
-            transition-all duration-300 hover:w-60 group cursor-pointer">
+            transition-all duration-300 active:w-60 hover:w-60 group cursor-pointer">
 
                 <!-- html heading -->
                 <div class="h-20 flex items-center justify-center">
@@ -229,6 +229,7 @@
                 <!-- discription drawer -->
                 <div class="max-h-0 overflow-hidden 
                 group-hover:max-h-60 
+                group-active::max-h-60 
                 transition-all duration-800">
 
                     <p class="text-xs text-gray-200 px-4 pb-4 text-center">
